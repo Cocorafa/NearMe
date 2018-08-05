@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.akashapplications.nearme.PlaceImage">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/place_image"
+        />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp"
+            tools:ignore="UselessParent">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fancy:fb_text="Previous"
+                android:id="@+id/prev"
+                fancy:fb_radius="4dp"
+                fancy:fb_borderWidth="1dp"
+                fancy:fb_defaultColor="#000"
+                fancy:fb_borderColor="#fff"
+                fancy:fb_textColor="#fff"
+                fancy:fb_focusColor="@color/hint"
+                style="?metaButtonBarButtonStyle"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1">
+
+            </mehdi.sakout.fancybuttons.FancyButton>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fancy:fb_text="Next"
+                android:id="@+id/next"
+                fancy:fb_radius="4dp"
+                android:layout_marginLeft="5dp"
+                fancy:fb_borderWidth="1dp"
+                fancy:fb_defaultColor="#000"
+                fancy:fb_borderColor="#fff"
+                fancy:fb_textColor="#fff"
+                fancy:fb_focusColor="@color/hint"
+                style="?metaButtonBarButtonStyle"
+                android:layout_weight="1">
+
+            </mehdi.sakout.fancybuttons.FancyButton>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

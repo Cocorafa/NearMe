@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/card_background"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:background="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cell2_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:tint="#24080808"
+            android:alpha="0.7"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/cell2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Ibis Bengaluru Techpark"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="CATEGORIES"
+            android:textColor="@color/hint"
+            android:textStyle="bold"
+            android:textSize="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell2_tagContainer"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <!--<co.lujun.androidtagview.TagContainerLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="0dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:id="@+id/cell2_tagContainer"-->
+            <!--app:container_enable_drag="false"-->
+            <!--app:horizontal_interval="10dp"-->
+            <!--app:vertical_interval="10dp"-->
+            <!--app:tag_clickable="true"-->
+            <!--app:tag_theme="random"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="ADDRESS"
+            android:textColor="@color/hint"
+            android:textStyle="bold"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/cell2_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="Address"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/cell2_navigate"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            fancy:fb_text="Navigate"
+            fancy:fb_radius="4dp"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#fff"
+            fancy:fb_borderColor="#4CAF50"
+            fancy:fb_textColor="#4CAF50"
+            fancy:fb_focusColor="#A5D6A7"
+            fancy:fb_iconPosition="left"
+            fancy:fb_iconPaddingRight="10dp"
+            fancy:fb_textSize="10sp"
+
+            />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/cell2_photos"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            fancy:fb_text="Photo"
+            fancy:fb_radius="4dp"
+            fancy:fb_textSize="10sp"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#fff"
+            fancy:fb_borderColor="#673AB7"
+            fancy:fb_textColor="#673AB7"
+            fancy:fb_focusColor="#B39DDB"
+            fancy:fb_iconPosition="left"
+            fancy:fb_iconPaddingRight="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

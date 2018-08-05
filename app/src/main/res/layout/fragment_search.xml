@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.akashapplications.nearme.fragments.SearchFrag">
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/search_searchbar"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:hint="Search restaurant"
+        app:met_textColorHint="@color/hint"
+        app:met_iconPadding="0dp"
+
+        app:met_iconLeft="@drawable/search"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/search_searchbar"
+        android:layout_alignStart="@+id/search_searchbar"
+        android:layout_below="@+id/search_searchbar"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
