@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".Splash">
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="111dp"
+        android:layout_above="@+id/ll"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_128" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Near"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Me"
+            android:textColor="#f07c1f"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:textSize="12sp"
+        android:textColor="#acacac"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="\u00A9 2018, AkashApplication" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/splash_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="87dp"
+        fancy:fb_borderColor="#34b406"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#fff"
+        fancy:fb_focusColor="#FF8FB781"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="4dp"
+        fancy:fb_text="Grant permission to access your location"
+        fancy:fb_textColor="#34b406"
+        fancy:fb_textSize="10sp"></mehdi.sakout.fancybuttons.FancyButton>
+</RelativeLayout>
