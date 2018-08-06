@@ -85,14 +85,10 @@ public class Splash extends Activity {
 
     private void requestPermission(){
 
-        if (ActivityCompat.shouldShowRequestPermissionRationale(activity,android.Manifest.permission.ACCESS_FINE_LOCATION)){
 
-            Toast.makeText(context,"GPS permission allows us to access location data. Please allow in App Settings for additional functionality.", Toast.LENGTH_LONG).show();
-
-//        } else {
 
             ActivityCompat.requestPermissions(activity,new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},PERMISSION_REQUEST_CODE);
-        }
+
     }
 
     @Override
@@ -106,7 +102,7 @@ public class Splash extends Activity {
                 } else {
                     btn.setVisibility(View.VISIBLE);
 
-                    Toast.makeText(context,"Soory, we cannot proceed without Location permission.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(context,"Sorry, we cannot proceed without Location permission.", Toast.LENGTH_LONG).show();
 
 
                 }
